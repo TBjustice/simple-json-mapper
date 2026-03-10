@@ -10,7 +10,7 @@ var missing_dict_to_empty:=true
 var mismatch_object_to_null:=true
 var missing_object_to_null:=true
 
-func parse_by_script(src: Dictionary, script:Script)->Object:
+func map_by_script(src: Dictionary, script:Script)->Object:
 	var base_type := script.get_instance_base_type()
 	if not ClassDB.class_exists(base_type):
 		return null
@@ -129,7 +129,7 @@ func _set_array(src: Array, dst:Array)->void:
 				var typed_script = dst.get_typed_script()
 				for item in src:
 					if item is Dictionary and typed_script != null:
-						var object := parse_by_script(item, typed_script)
+						var object := map_by_script(item, typed_script)
 						dst.append(object)
 					else:
 						dst.append(null)

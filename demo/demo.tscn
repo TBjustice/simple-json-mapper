@@ -10,30 +10,3 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_63lf2")
-json_text = "{
-\"int_list\":[1, 3, 5],
-\"demo_class\":{
-\"any\": [1,2,3],
-\"flag\": true,
-\"id\": 123,
-\"value\": 3.14,
-\"text\": \"Hello WithJson!\"
-},
-\"demo_class_list\":[
-{
-\"any\": \"#0\",
-\"flag\": true,
-\"id\": 1,
-\"value\": 10,
-\"text\": \"Hello!\"
-},
-
-{
-\"any\": \"#1\",
-\"flag\": false,
-\"id\": 2,
-\"value\": 20,
-\"text\": \"Bye!\"
-}
-]
-}"
