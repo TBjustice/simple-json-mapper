@@ -31,7 +31,7 @@ func parse_other_class(data: Dictionary)->OtherClass:
 ```
 
 ### Test sample code
-```
+```gdscript
 const JSON_TEXT1 = """{
 	"any": ["Hello", 123, "World"],
 	"flag": true,
